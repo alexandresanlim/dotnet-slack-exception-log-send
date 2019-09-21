@@ -11,7 +11,7 @@ catch (System.Exception ex)
     ex.SendToSlack();
 }
 ```
-## <a name="result"/> Awesome Result:
+## <a name="result"/>It's the Awesome Result:
 
 ![alt text](https://i.imgur.com/Pc0MXIj.png)
 
