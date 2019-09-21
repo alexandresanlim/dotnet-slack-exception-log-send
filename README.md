@@ -1,7 +1,9 @@
 # Ex.SendToSlack() (Slack.Exception.Send)
 
-![Nuget](https://img.shields.io/nuget/dt/Slack.Exception.Send)(https://www.nuget.org/packages/Slack.Exception.Send)
-![Nuget](https://img.shields.io/nuget/v/Slack.Exception.Send)(https://www.nuget.org/packages/Slack.Exception.Send)
+[![Nuget](https://img.shields.io/nuget/dt/Slack.Exception.Send)](https://www.nuget.org/packages/Slack.Exception.Send)
+[![Nuget](https://img.shields.io/nuget/v/Slack.Exception.Send)](https://www.nuget.org/packages/Slack.Exception.Send)
+
+[![Nuget Status](https://img.shields.io/nuget/dt/OData.QueryBuilder.svg)](https://www.nuget.org/packages/OData.QueryBuilder)
 
 ## <a name="very_simple"/> Very Simple to use
 ```csharp
