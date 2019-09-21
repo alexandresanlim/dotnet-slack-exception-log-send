@@ -1,6 +1,6 @@
 # Ex.SendToSlack() (Slack.Exception.Send)
 
-![Screenshot](screenshot.png)
+![alt text](https://imgur.com/XZfKzqt)
 
 ## <a name="very_simple"/> Very Simple
 ```csharp
