@@ -39,7 +39,7 @@ namespace Slack.Exception.Send
             };
         }
 
-        public static async Task<bool> SendToSlack(this System.Exception ex, List<SlackField> extraFields = null)
+        public static async Task<bool> SendToSlackAsync(this System.Exception ex, List<SlackField> extraFields = null)
         {
             if (string.IsNullOrEmpty(Config?.WebHookUrl))
                 throw new ArgumentException("WebHookUrl not found");
@@ -62,6 +62,41 @@ namespace Slack.Exception.Send
                     message = msg;
             }
 
+            var slackMessage = BuildSlackMessage(frame, message, extraFields);
+
+            return await SlackClient.PostAsync(slackMessage).ConfigureAwait(false);
+        }
+
+        public static bool SendToSlack(this System.Exception ex, List<SlackField> extraFields = null)
+        {
+            if (string.IsNullOrEmpty(Config?.WebHookUrl))
+                throw new ArgumentException("WebHookUrl not found");
+
+            SlackClient = new SlackClient(Config.WebHookUrl);
+
+            var st = new StackTrace(ex, true);
+
+            var frame = st.GetFrame(0);
+
+            var message = ex.Message;
+
+            if (ex is MobileServiceInvalidOperationException)
+            {
+                var e = ex as MobileServiceInvalidOperationException;
+
+                var msg = e.Response.Content != null ? e?.Response?.Content?.ToString() : "";
+
+                if (!string.IsNullOrEmpty(msg))
+                    message = msg;
+            }
+
+            var slackMessage = BuildSlackMessage(frame, message, extraFields);
+
+            return SlackClient.Post(slackMessage);
+        }
+
+        private static SlackMessage BuildSlackMessage(StackFrame frame, string message, List<SlackField> extraFields = null)
+        {
             var fields = new List<SlackField>
             {
                 new SlackField
@@ -110,7 +145,7 @@ namespace Slack.Exception.Send
                 fields.AddRange(extraFields);
 
 
-            var slackMessage = new SlackMessage()
+            return new SlackMessage()
             {
                 Attachments = new List<SlackAttachment>
                 {
@@ -121,8 +156,6 @@ namespace Slack.Exception.Send
                     },
                 },
             };
-
-            return await SlackClient.PostAsync(slackMessage).ConfigureAwait(false);
         }
     }
 }
