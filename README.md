@@ -1,6 +1,6 @@
 # Ex.SendToSlack() (Slack.Exception.Send)
 
-## <a name="very_simple"/> Very Simple
+## <a name="very_simple"/> Very Simple to use
 ```csharp
 try
 {
