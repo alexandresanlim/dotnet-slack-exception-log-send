@@ -1,14 +1,14 @@
-# Slack.Exception.Send
+# Ex.SendToSlack() (Slack.Exception.Send)
 
 
-## <a name="ByKey"/> ByKey
+## <a name="very_simple"/> Very Simple
 ```csharp
 try
 {
     throw new DivideByZeroException();
 }
-catch (System.Exception e)
+catch (System.Exception ex)
 {
-    await e.SendToSlack();
+    await ex.SendToSlack();
 }
 ```
