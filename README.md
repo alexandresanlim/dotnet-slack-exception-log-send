@@ -1,6 +1,6 @@
 # Ex.SendToSlack() (Slack.Exception.Send)
 
-![alt text](https://imgur.com/XZfKzqt)
+![alt text](https://i.imgur.com/AXxsheU.jpg)
 
 ## <a name="very_simple"/> Very Simple
 ```csharp
