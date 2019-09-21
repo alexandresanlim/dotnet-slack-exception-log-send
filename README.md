@@ -1,6 +1,6 @@
 # Ex.SendToSlack() (Slack.Exception.Send)
 
-![Screenshot](img/screenshot.png)
+![Screenshot](screenshot.png)
 
 ## <a name="very_simple"/> Very Simple
 ```csharp
