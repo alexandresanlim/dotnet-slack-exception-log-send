@@ -8,7 +8,7 @@ try
 }
 catch (System.Exception ex)
 {
-    await ex.SendToSlack();
+    ex.SendToSlack();
 }
 ```
 ## <a name="result"/> Awesome Result:
