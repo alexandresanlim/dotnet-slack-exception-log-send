@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slack.Exception.Send", "Slack.Exception.Send\Slack.Exception.Send.csproj", "{FFBA32D3-CCAC-4191-8739-688482AE516F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slack.Exception.Send.Test", "Slack.Exception.Send.Test\Slack.Exception.Send.Test.csproj", "{25559AA1-C0FD-4209-8FE0-0E8917FBD272}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFBA32D3-CCAC-4191-8739-688482AE516F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFBA32D3-CCAC-4191-8739-688482AE516F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFBA32D3-CCAC-4191-8739-688482AE516F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFBA32D3-CCAC-4191-8739-688482AE516F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25559AA1-C0FD-4209-8FE0-0E8917FBD272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25559AA1-C0FD-4209-8FE0-0E8917FBD272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25559AA1-C0FD-4209-8FE0-0E8917FBD272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25559AA1-C0FD-4209-8FE0-0E8917FBD272}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {585F5FFB-4705-4A83-AC23-75AEAE3DF14C}
+	EndGlobalSection
+EndGlobal

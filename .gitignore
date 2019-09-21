@@ -3,3 +3,10 @@
 ################################################################################
 
 /.vs
+/Slack.Exception.Send/.vs/Slack.Exception.Send/v16
+/Slack.Exception.Send/Slack.Exception.Send/bin
+/Slack.Exception.Send/Slack.Exception.Send/obj
+/Slack.Exception.Send/Slack.Exception.Send/Properties
+/Slack.Exception.Send/Slack.Exception.Send.Test/bin
+/Slack.Exception.Send/Slack.Exception.Send.Test/obj
+/Slack.Exception.Send/Slack.Exception.Send/Slack.Exception.Send.csproj.user
