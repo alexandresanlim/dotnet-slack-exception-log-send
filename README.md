@@ -1,7 +1,5 @@
 # Ex.SendToSlack() (Slack.Exception.Send)
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
-
 ## <a name="very_simple"/> Very Simple
 ```csharp
 try
@@ -10,6 +8,11 @@ try
 }
 catch (System.Exception ex)
 {
-    await ex.SendToSlack();
+    ex.SendToSlack();
 }
 ```
+## <a name="result"/> Awesome Result:
+
+![alt text](https://i.imgur.com/Pc0MXIj.png)
+
+
