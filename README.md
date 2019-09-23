@@ -19,11 +19,13 @@ catch (System.Exception ex)
 ![alt text](https://i.imgur.com/Pc0MXIj.png)
 
 ## <a name="very_simple"/> Stap to configure
+1 - Install nuget package
+(https://www.nuget.org/packages/Slack.Exception.Send)
 
-1 - Install and configure a new WebHook slack app 
+2 - Install and configure a new WebHook slack app 
 (https://infinitussolutions.slack.com/apps/A0F7XDUAZ-incoming-webhooks?next_id=0)
 
-2 - Create a new configuration of SendException
+3 - Create a new configuration of SendException
 ```csharp
 public TestSendException()
 {
@@ -33,7 +35,7 @@ public TestSendException()
     });
 }
 ```
-3 - Use in "cath"
+4 - Use in "cath"
 ```csharp
 try
 {
