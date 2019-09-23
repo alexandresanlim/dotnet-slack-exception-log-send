@@ -50,7 +50,7 @@ catch (System.Exception e)
 ```
 Results in:
 
-![alt text](https://i.imgur.com/ZkTRNNw.png)
+![alt text](https://i.imgur.com/sjXiF91.png)
 
 ## <a name="very_simple"/> Step to configure
 1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
