@@ -18,6 +18,40 @@ Results in:
 
 ![alt text](https://i.imgur.com/Pc0MXIj.png)
 
+## <a name="many_field"/> Support for many fields
+```csharp
+try
+{
+    throw new DivideByZeroException();
+}
+catch (System.Exception e)
+{
+    await e.SendToSlackAsync(new List<Webhooks.SlackField>
+    {
+         new Webhooks.SlackField
+         {
+             Title = "New Field 1",
+             Value = "Hi, I'am a new field short 1",
+             Short = true
+         },
+         new Webhooks.SlackField
+         {
+             Title = "New Field 2",
+             Value = "Hi, I'am a new field short 2",
+             Short = true
+         },
+         new Webhooks.SlackField
+         {
+             Title = "New Field 3",
+             Value = "Hi, I'am a new field long to show in GitHub sample 😎",
+         }
+    });
+}
+```
+Results in:
+
+![alt text](https://i.imgur.com/jjnBkod.jpg)
+
 ## <a name="very_simple"/> Step to configure
 1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
 
