@@ -18,6 +18,31 @@ catch (System.Exception ex)
 
 ![alt text](https://i.imgur.com/Pc0MXIj.png)
 
+## <a name="very_simple"/> Stap to configure
+
+1 - Install and configure a new WebHook slack app (https://infinitussolutions.slack.com/apps/A0F7XDUAZ-incoming-webhooks?next_id=0)
+2 - Create a new configuration of SendException
+```csharp
+public TestSendException()
+{
+    SendException.CreateConfig(new SendToSlackConfig
+    {
+        WebHookUrl = "YOUR WEBHOOK URL"
+    });
+}
+```
+3 - Use in "cath"
+```csharp
+try
+{
+
+}
+catch (System.Exception e)
+{
+    e.SendToSlack();
+}
+```          
+
 ## Benefits
 * Create a bug report
 
