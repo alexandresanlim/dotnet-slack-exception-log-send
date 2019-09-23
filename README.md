@@ -20,7 +20,9 @@ catch (System.Exception ex)
 
 ## <a name="very_simple"/> Stap to configure
 
-1 - Install and configure a new WebHook slack app (https://infinitussolutions.slack.com/apps/A0F7XDUAZ-incoming-webhooks?next_id=0)
+1 - Install and configure a new WebHook slack app 
+(https://infinitussolutions.slack.com/apps/A0F7XDUAZ-incoming-webhooks?next_id=0)
+
 2 - Create a new configuration of SendException
 ```csharp
 public TestSendException()
