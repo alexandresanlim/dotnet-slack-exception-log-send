@@ -18,7 +18,7 @@ Results in:
 
 ![alt text](https://i.imgur.com/Pc0MXIj.png)
 
-## <a name="many_field"/> Support for many fields
+## <a name="many_field"/> Support for extra fields
 ```csharp
 try
 {
