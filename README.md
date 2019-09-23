@@ -30,27 +30,27 @@ catch (System.Exception e)
     {
          new Webhooks.SlackField
          {
-             Title = "New Field 1",
-             Value = "Hi, I'am a new field short 1",
+             Title = "Username",
+             Value = "Alexandre Sanlim",
              Short = true
          },
          new Webhooks.SlackField
          {
-             Title = "New Field 2",
-             Value = "Hi, I'am a new field short 2",
+             Title = "S.O",
+             Value = "Windows 10",
              Short = true
          },
          new Webhooks.SlackField
          {
              Title = "New Field 3",
-             Value = "Hi, I'am a new field long to show in GitHub sample 😎",
+             Value = "Hi, I'am a new long field to show in GitHub sample 😎",
          }
     });
 }
 ```
 Results in:
 
-![alt text](https://i.imgur.com/jjnBkod.jpg)
+![alt text](https://i.imgur.com/ZkTRNNw.png)
 
 ## <a name="very_simple"/> Step to configure
 1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
