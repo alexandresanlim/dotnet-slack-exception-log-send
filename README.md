@@ -1,3 +1,4 @@
+![alt text](https://i.imgur.com/lzWOtVP.png)
 # Ex.SendToSlack() (Slack.Exception.Send)
 
 [![Nuget](https://img.shields.io/nuget/dt/Slack.Exception.Send)](https://www.nuget.org/packages/Slack.Exception.Send)
