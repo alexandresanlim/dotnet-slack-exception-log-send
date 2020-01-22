@@ -8,6 +8,7 @@
 ```csharp
 try
 {
+    //To force exception
     throw new DivideByZeroException();
 }
 catch (System.Exception ex)
