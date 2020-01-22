@@ -68,7 +68,7 @@ public TestSendException()
     });
 }
 ```
-4 - Use in "cath"
+4 - Use in "catch"
 ```csharp
 try
 {
