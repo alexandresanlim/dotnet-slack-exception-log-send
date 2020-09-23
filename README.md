@@ -55,9 +55,11 @@ Results in:
 ![alt text](https://i.imgur.com/sjXiF91.png)
 
 ## <a name="very_simple"/> Step to configure
+
 1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
 
 2 - Install and add a new configuration Incoming WebHooks Slack App:
+
 ![image](https://user-images.githubusercontent.com/5353685/94029386-21f5d400-fd93-11ea-9148-e29bee9993aa.png)
 
 3 - Create a new configuration of Slack.Exception.Send
