@@ -1,5 +1,5 @@
 
-# Ex.SendToSlack() (Slack.Exception.Send)
+
 
 [![Nuget](https://img.shields.io/nuget/dt/Slack.Exception.Send)](https://www.nuget.org/packages/Slack.Exception.Send)
 [![Nuget](https://img.shields.io/nuget/v/Slack.Exception.Send)](https://www.nuget.org/packages/Slack.Exception.Send)
@@ -54,7 +54,7 @@ Results in:
 
 ![alt text](https://i.imgur.com/sjXiF91.png)
 
-## <a name="very_simple"/> Step to configure
+## <a name="very_simple"/> How to use?
 
 1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
 
