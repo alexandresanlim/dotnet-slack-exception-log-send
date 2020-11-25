@@ -1,4 +1,4 @@
-
+- With this package you will be able to create a bug report with Slack application 
 
 
 [![Nuget](https://img.shields.io/nuget/dt/Slack.Exception.Send)](https://www.nuget.org/packages/Slack.Exception.Send)
