@@ -4,7 +4,7 @@
 [![Nuget](https://img.shields.io/nuget/dt/Slack.Exception.Send)](https://www.nuget.org/packages/Slack.Exception.Send)
 [![Nuget](https://img.shields.io/nuget/v/Slack.Exception.Send)](https://www.nuget.org/packages/Slack.Exception.Send)
 
-## <a name="very_simple"/> Very Simple to use
+## <a name="very_simple"/> How to use?
 ```csharp
 try
 {
