@@ -2,7 +2,7 @@
 [![Nuget](https://img.shields.io/nuget/dt/Slack.Exception.Send)](https://www.nuget.org/packages/Slack.Exception.Send)
 [![Nuget](https://img.shields.io/nuget/v/Slack.Exception.Send)](https://www.nuget.org/packages/Slack.Exception.Send)
 
-With this package you will be able to create a bug report with Slack application, inspect and track any issues your users run into while running your app.
+With this .net package you will be able to create a bug report with Slack application, inspect and track any issues your users run into while running your app.
 
 
 ## How to use?
