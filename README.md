@@ -85,11 +85,6 @@ Results in:
 
 ![alt text](https://i.imgur.com/sjXiF91.png)
 
-      
-
-## Benefits
-* Create a bug report
-* Support to MobileServiceInvalidOperationException
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
