@@ -43,7 +43,7 @@ public TestSendException()
 ```
 4 - Finish! Now your aplication will be solid!
 
-## <a name="many_field"/> Support for extra fields
+## Support for extra fields
 ```csharp
 try
 {
