@@ -6,6 +6,7 @@ With this .net package you will be able to create a bug report with Slack applic
 
 
 ## How to use?
+It's really simple, send an error to be tracked as a handled exception using the function SendToSlack:
 ```csharp
 try
 {
