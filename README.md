@@ -10,8 +10,7 @@ It's really simple, send an error to be tracked as a handled exception using the
 ```csharp
 try
 {
-    //To force exception
-    throw new DivideByZeroException();
+    //your code here
 }
 catch (System.Exception ex)
 {
@@ -40,17 +39,7 @@ public TestSendException()
     });
 }
 ```
-4 - Use in "catch"
-```csharp
-try
-{
-
-}
-catch (System.Exception e)
-{
-    e.SendToSlack();
-}
-```    
+4 - Finish! Now your aplication will be solid!
 
 ## <a name="many_field"/> Support for extra fields
 ```csharp
