@@ -20,6 +20,36 @@ Results in:
 
 ![alt text](https://i.imgur.com/Pc0MXIj.png)
 
+## Getting Start
+
+1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
+
+2 - Install and add a new configuration Incoming WebHooks Slack App:
+
+![image](https://user-images.githubusercontent.com/5353685/94029386-21f5d400-fd93-11ea-9148-e29bee9993aa.png)
+
+3 - Create a new configuration of Slack.Exception.Send
+```csharp
+public TestSendException()
+{
+    SendException.CreateConfig(new SendToSlackConfig
+    {
+        WebHookUrl = "YOUR WEBHOOK URL"
+    });
+}
+```
+4 - Use in "catch"
+```csharp
+try
+{
+
+}
+catch (System.Exception e)
+{
+    e.SendToSlack();
+}
+```    
+
 ## <a name="many_field"/> Support for extra fields
 ```csharp
 try
@@ -54,35 +84,7 @@ Results in:
 
 ![alt text](https://i.imgur.com/sjXiF91.png)
 
-## <a name="very_simple"/> How to use?
-
-1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
-
-2 - Install and add a new configuration Incoming WebHooks Slack App:
-
-![image](https://user-images.githubusercontent.com/5353685/94029386-21f5d400-fd93-11ea-9148-e29bee9993aa.png)
-
-3 - Create a new configuration of Slack.Exception.Send
-```csharp
-public TestSendException()
-{
-    SendException.CreateConfig(new SendToSlackConfig
-    {
-        WebHookUrl = "YOUR WEBHOOK URL"
-    });
-}
-```
-4 - Use in "catch"
-```csharp
-try
-{
-
-}
-catch (System.Exception e)
-{
-    e.SendToSlack();
-}
-```          
+      
 
 ## Benefits
 * Create a bug report
