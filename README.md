@@ -23,6 +23,8 @@ Results in:
 
 ## Getting Start
 
+### Prepare your slack channel to receive the exceptions
+
 1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
 
 2 - Install and add a new configuration Incoming WebHooks Slack App:
