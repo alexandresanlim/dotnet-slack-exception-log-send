@@ -21,7 +21,7 @@ Results in:
 
 ![alt text](https://i.imgur.com/Pc0MXIj.png)
 
-# Getting Start
+# 🚀 Getting Start
 
 ### Prepare your slack channel to receive the exceptions
 
