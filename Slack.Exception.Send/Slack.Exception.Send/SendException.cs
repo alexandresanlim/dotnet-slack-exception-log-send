@@ -61,17 +61,10 @@ namespace Slack.Exception.Send
 
             var frame = st.GetFrame(0);
 
-            var message = ex.Message;
+            var message = ex?.Message;
 
-            //if (ex is MobileServiceInvalidOperationException)
-            //{
-            //    var e = ex as MobileServiceInvalidOperationException;
-
-            //    var msg = e.Response.Content != null ? e?.Response?.Content?.ToString() : "";
-
-            //    if (!string.IsNullOrEmpty(msg))
-            //        message = msg;
-            //}
+            if (!string.IsNullOrEmpty(ex?.InnerException?.Message))
+                message += "\n\nInnerException.Message: " + ex?.InnerException?.Message;
 
             return BuildSlackMessage(frame, message, extraFields);
         }
