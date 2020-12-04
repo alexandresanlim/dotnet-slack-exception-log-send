@@ -100,10 +100,10 @@ catch (System.Exception e)
 ```
 Results in:
 
-![alt text](https://i.imgur.com/sjXiF91.png)
+<img width='500' src='https://user-images.githubusercontent.com/5353685/101175795-5d7b0d00-3624-11eb-9124-a63bd77fcf97.png' />
 
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)]
 
 
 
