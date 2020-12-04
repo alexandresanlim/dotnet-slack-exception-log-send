@@ -23,7 +23,7 @@ Results in:
 
 # 🚀 Getting Start
 
-### Prepare your slack channel to receive the exceptions
+## Prepare your slack channel to receive the exceptions
 
 #### 1 - Lets create a channel and a webhook url to receive exception messages.
 
@@ -49,9 +49,12 @@ Results:
 
 <img width='700' src='https://user-images.githubusercontent.com/5353685/101173743-b4cbae00-3621-11eb-9616-ad8bb3c7e1a5.png' />
 
-1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
 
-3 - Create a new configuration of Slack.Exception.Send
+## Prepare your application to send the exceptions
+
+#### 1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
+
+#### 2 - Create a new configuration of Slack.Exception.Send
 ```csharp
 public TestSendException()
 {
@@ -61,7 +64,9 @@ public TestSendException()
     });
 }
 ```
-4 - Finish! Now your aplication will be solid!
+#### 3 - Finish! Now your aplication will be solid!
+
+# More!
 
 ## Support for extra fields
 ```csharp
