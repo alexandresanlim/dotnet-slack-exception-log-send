@@ -28,12 +28,15 @@ Results in:
 ## Lets create a channel and a webhook url to receive exception messages.
 
  - On slack app select add channel > Create a new channel > Set a name, example: "bug-report" or "exceptions" > Confirm
+ 
+Results:
 
 ![image](https://user-images.githubusercontent.com/5353685/101170411-2d7c3b80-361d-11eb-9b6d-e8545e2511f1.png)
 
 ### Install Incoming WebHook App
 
  - Select browse Slack > Apps > Find "Incoming Webhooks" > Add
+ 
 <img width='500' src='https://user-images.githubusercontent.com/5353685/101171414-7aacdd00-361e-11eb-85e4-8f652ba61e6b.png' />
 
 ### On new tab select add to slack.
