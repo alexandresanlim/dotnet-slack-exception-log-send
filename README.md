@@ -41,7 +41,7 @@ Results:
 
 #### 3 - On new tab select add to slack.
 
-3.1 Select your channel to receive slack exceptions messages > Add Integration
+3.1 Select your channel to receive exceptions messages from your application > Add Integration
 
 <img width='700' src='https://user-images.githubusercontent.com/5353685/101173510-661e1400-3621-11eb-824d-3721d55fc100.png' />
 
