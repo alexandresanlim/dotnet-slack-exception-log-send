@@ -1,5 +1,4 @@
-﻿using Microsoft.WindowsAzure.MobileServices;
-using Slack.Webhooks;
+﻿using Slack.Webhooks;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -14,7 +13,7 @@ namespace Slack.Exception.Send
         public string Color { get; set; } = "#c0392b";
 
         /// <summary>
-        /// Get your Slack WebHookUrl here: Finde Incoming-Webhooks in Slack Apps and SetUp a new configuration.
+        /// Set your Slack WebHookUrl here
         /// </summary>
         public string WebHookUrl { get; set; }
     }
@@ -25,7 +24,7 @@ namespace Slack.Exception.Send
 
         public static SendToSlackConfig Config { get; set; }
 
-        public static void CreateConfig(SendToSlackConfig config)
+        public static void Start(SendToSlackConfig config)
         {
             Config = config;
         }
@@ -41,33 +40,17 @@ namespace Slack.Exception.Send
 
         public static async Task<bool> SendToSlackAsync(this System.Exception ex, List<SlackField> extraFields = null)
         {
-            if (string.IsNullOrEmpty(Config?.WebHookUrl))
-                throw new ArgumentException("WebHookUrl not found");
-
-            SlackClient = new SlackClient(Config.WebHookUrl);
-
-            var st = new StackTrace(ex, true);
-
-            var frame = st.GetFrame(0);
-
-            var message = ex.Message;
-
-            if (ex is MobileServiceInvalidOperationException)
-            {
-                var e = ex as MobileServiceInvalidOperationException;
-
-                var msg = e.Response.Content != null ? await e?.Response?.Content?.ReadAsStringAsync() : "";
-
-                if (!string.IsNullOrEmpty(msg))
-                    message = msg;
-            }
-
-            var slackMessage = BuildSlackMessage(frame, message, extraFields);
-
+            var slackMessage = GetExceptionText(ex, extraFields);
             return await SlackClient.PostAsync(slackMessage).ConfigureAwait(false);
         }
 
         public static bool SendToSlack(this System.Exception ex, List<SlackField> extraFields = null)
+        {
+            var slackMessage = GetExceptionText(ex, extraFields);
+            return SlackClient.Post(slackMessage);
+        }
+
+        private static SlackMessage GetExceptionText(System.Exception ex, List<SlackField> extraFields = null)
         {
             if (string.IsNullOrEmpty(Config?.WebHookUrl))
                 throw new ArgumentException("WebHookUrl not found");
@@ -80,19 +63,17 @@ namespace Slack.Exception.Send
 
             var message = ex.Message;
 
-            if (ex is MobileServiceInvalidOperationException)
-            {
-                var e = ex as MobileServiceInvalidOperationException;
+            //if (ex is MobileServiceInvalidOperationException)
+            //{
+            //    var e = ex as MobileServiceInvalidOperationException;
 
-                var msg = e.Response.Content != null ? e?.Response?.Content?.ToString() : "";
+            //    var msg = e.Response.Content != null ? e?.Response?.Content?.ToString() : "";
 
-                if (!string.IsNullOrEmpty(msg))
-                    message = msg;
-            }
+            //    if (!string.IsNullOrEmpty(msg))
+            //        message = msg;
+            //}
 
-            var slackMessage = BuildSlackMessage(frame, message, extraFields);
-
-            return SlackClient.Post(slackMessage);
+            return BuildSlackMessage(frame, message, extraFields);
         }
 
         private static SlackMessage BuildSlackMessage(StackFrame frame, string message, List<SlackField> extraFields = null)
@@ -130,7 +111,7 @@ namespace Slack.Exception.Send
                 new SlackField
                 {
                     Title = "Line Column",
-                    Value = frame.GetFileLineNumber().ToString(),
+                    Value = frame.GetFileColumnNumber().ToString(),
                     Short = true
                 },
 

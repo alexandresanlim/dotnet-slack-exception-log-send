@@ -1,5 +1,4 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Microsoft.WindowsAzure.MobileServices;
 using System;
 using System.Threading.Tasks;
 
@@ -11,9 +10,9 @@ namespace Slack.Exception.Send.Test
 
         public TestSendException()
         {
-            SendException.CreateConfig(new SendToSlackConfig
+            SendException.Start(new SendToSlackConfig
             {
-                WebHookUrl = "https://hooks.slack.com/services/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"
+                WebHookUrl = "https://hooks.slack.com/services/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"
             });
         }
 
@@ -30,18 +29,18 @@ namespace Slack.Exception.Send.Test
             }
         }
 
-        [TestMethod]
-        public async Task GitHubSampleMobileService()
-        {
-            try
-            {
-                throw new MobileServiceInvalidOperationException("Error", new System.Net.Http.HttpRequestMessage(), new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.BadRequest));
-            }
-            catch (System.Exception e)
-            {
-                await e.SendToSlackAsync();
-            }
-        }
+        //[TestMethod]
+        //public async Task GitHubSampleMobileService()
+        //{
+        //    try
+        //    {
+        //        throw new MobileServiceInvalidOperationException("Error", new System.Net.Http.HttpRequestMessage(), new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.BadRequest));
+        //    }
+        //    catch (System.Exception e)
+        //    {
+        //        await e.SendToSlackAsync();
+        //    }
+        //}
 
 
         [TestMethod]
@@ -58,19 +57,19 @@ namespace Slack.Exception.Send.Test
             }
         }
 
-        [TestMethod]
-        public async Task SendMobileServiceInvalidOperationException()
-        {
-            try
-            {
-                throw new MobileServiceInvalidOperationException("Error", new System.Net.Http.HttpRequestMessage(), new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.BadRequest));
-            }
-            catch (System.Exception e)
-            {
-                var send = await e.SendToSlackAsync();
-                Assert.IsTrue(send);
-            }
-        }
+        //[TestMethod]
+        //public async Task SendMobileServiceInvalidOperationException()
+        //{
+        //    try
+        //    {
+        //        throw new MobileServiceInvalidOperationException("Error", new System.Net.Http.HttpRequestMessage(), new System.Net.Http.HttpResponseMessage(System.Net.HttpStatusCode.BadRequest));
+        //    }
+        //    catch (System.Exception e)
+        //    {
+        //        var send = await e.SendToSlackAsync();
+        //        Assert.IsTrue(send);
+        //    }
+        //}
 
 
         [TestMethod]
@@ -78,7 +77,7 @@ namespace Slack.Exception.Send.Test
         {
             try
             {
-                SendException.CreateConfig(new SendToSlackConfig
+                SendException.Start(new SendToSlackConfig
                 {
                     WebHookUrl = ""
                 });
