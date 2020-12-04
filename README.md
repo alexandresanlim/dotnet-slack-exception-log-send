@@ -25,7 +25,7 @@ Results in:
 
 ### Prepare your slack channel to receive the exceptions
 
-### 1 - Lets create a channel and a webhook url to receive exception messages.
+#### 1 - Lets create a channel and a webhook url to receive exception messages.
 
  1.1 On slack app select add channel > Create a new channel > Set a name, example: "bug-report" or "exceptions" > Confirm
  
@@ -33,13 +33,13 @@ Results:
 
 ![image](https://user-images.githubusercontent.com/5353685/101170411-2d7c3b80-361d-11eb-9b6d-e8545e2511f1.png)
 
-### 2 - Install Incoming WebHook App
+#### 2 - Install Incoming WebHook App
 
  2.1 Select browse Slack > Apps > Find "Incoming Webhooks" > Add
  
 <img width='500' src='https://user-images.githubusercontent.com/5353685/101171414-7aacdd00-361e-11eb-85e4-8f652ba61e6b.png' />
 
-### 3 - On new tab select add to slack.
+#### 3 - On new tab select add to slack.
 
 3.1 Select your channel to receive slack exceptions messages > Add Integration
 
