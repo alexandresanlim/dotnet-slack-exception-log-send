@@ -100,7 +100,7 @@ catch (System.Exception e)
 ```
 Results in:
 
-<img src='https://user-images.githubusercontent.com/5353685/101176947-f78f8500-3625-11eb-99c2-87ba2827e3df.png' />
+<img width='800' src='https://user-images.githubusercontent.com/5353685/101176947-f78f8500-3625-11eb-99c2-87ba2827e3df.png' />
 
 
 <img src='https://forthebadge.com/images/badges/built-with-love.svg' />
