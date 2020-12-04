@@ -103,7 +103,9 @@ Results in:
 <img src='https://user-images.githubusercontent.com/5353685/101176947-f78f8500-3625-11eb-99c2-87ba2827e3df.png' />
 
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)]
+<img src='https://forthebadge.com/images/badges/built-with-love.svg' />
+
+
 
 
 
