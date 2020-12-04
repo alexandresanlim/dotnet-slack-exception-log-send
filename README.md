@@ -43,11 +43,11 @@ Results:
 
  - Select your channel to receive slack exceptions messages > Add Integration
 
-<img width='600' src='https://user-images.githubusercontent.com/5353685/101173510-661e1400-3621-11eb-824d-3721d55fc100.png' />
+<img width='700' src='https://user-images.githubusercontent.com/5353685/101173510-661e1400-3621-11eb-824d-3721d55fc100.png' />
 
  - It's ready! Copy the webhook URL generated.
 
-<img width='600' src='https://user-images.githubusercontent.com/5353685/101173743-b4cbae00-3621-11eb-9616-ad8bb3c7e1a5.png' />
+<img width='700' src='https://user-images.githubusercontent.com/5353685/101173743-b4cbae00-3621-11eb-9616-ad8bb3c7e1a5.png' />
 
 1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
 
