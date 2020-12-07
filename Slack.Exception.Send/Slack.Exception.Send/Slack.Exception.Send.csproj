@@ -6,12 +6,20 @@
     <PackageProjectUrl>https://github.com/alexandresanlim/Slack.Exception.Send</PackageProjectUrl>
     <RepositoryUrl>https://github.com/alexandresanlim/Slack.Exception.Send</RepositoryUrl>
     <PackageReleaseNotes></PackageReleaseNotes>
-    <Version>1.0.6</Version>
+    <Version>1.0.7</Version>
     <Description>Create a bug report with exceptions from your code and send to Slack</Description>
+    <PackageIcon>logo.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Slack.Webhooks" Version="1.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="src\logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
