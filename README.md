@@ -28,7 +28,7 @@ Results in:
 ![alt text](https://i.imgur.com/Pc0MXIj.png)
 
 ## How to start it?
-We have a [great wiki article](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki) explaining exactly that or follow steps:
+We have a [great wiki article](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki) explaining exactly that or follow the steps:
 
 [1 - Prepare your Slack channel to receive exceptions](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki/1---Prepare-your-slack-channel-to-receive-exceptions)
 
