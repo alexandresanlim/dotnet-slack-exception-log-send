@@ -31,21 +31,21 @@ Results in:
 
 # Prepare your slack channel to receive exceptions
 
-### 1 - Lets create a channel and a webhook url to receive exception messages.
+1 - Lets create a channel and a webhook url to receive exception messages.
 
- 1.1 On slack app select add channel > Create a new channel > Set a name, example: "bug-report" or "exceptions" > Confirm
+1.1 On slack app select add channel > Create a new channel > Set a name, example: "bug-report" or "exceptions" > Confirm
  
 Results:
 
 ![image](https://user-images.githubusercontent.com/5353685/101170411-2d7c3b80-361d-11eb-9b6d-e8545e2511f1.png)
 
-### 2 - Install Incoming WebHook App
+2 - Install Incoming WebHook App
 
- 2.1 Select browse Slack > Apps > Find "Incoming Webhooks" > Add
+2.1 Select browse Slack > Apps > Find "Incoming Webhooks" > Add
  
 <img width='500' src='https://user-images.githubusercontent.com/5353685/101171414-7aacdd00-361e-11eb-85e4-8f652ba61e6b.png' />
 
-### 3 - On new tab select add to slack.
+3 - On new tab select add to slack.
 
 3.1 Select your channel to receive exceptions messages from your application > Add Integration
 
@@ -58,16 +58,16 @@ Results:
 
 # Prepare your application to send exceptions
 
-### 1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
+1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
 
-### 2 - On your start appliction, create a new configuration of Slack.Exception.Send
+2 - On your start appliction, create a new configuration of Slack.Exception.Send
 ```csharp
 SlackExceptionSend.Start(new Config
 {
     WebHookUrl = "YOUR WEBHOOK URL TO TEST HERE"
 });
 ```
-### 3 - Finish! You can use ex.SendToSlack() on exceptions to be your aplication will be solid!
+3 - Finish! You can use ex.SendToSlack() on exceptions to be your aplication will be solid!
 
 # More!
 
