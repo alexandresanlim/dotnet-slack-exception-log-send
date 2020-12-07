@@ -27,8 +27,8 @@ Results in:
 
 ![alt text](https://i.imgur.com/Pc0MXIj.png)
 
-How to use it?
-We have a [great wiki article](.../wiki) explaining exactly that!
+## How to use it?
+We have a [great wiki article](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki) explaining exactly that!
 
 
 <img src='https://forthebadge.com/images/badges/built-with-love.svg' />
