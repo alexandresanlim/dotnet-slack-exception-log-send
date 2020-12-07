@@ -8,7 +8,6 @@ namespace Slack.Exception.Send.Test
     [TestClass]
     public class TestSendException
     {
-
         public TestSendException()
         {
             SendException.Start(new Config

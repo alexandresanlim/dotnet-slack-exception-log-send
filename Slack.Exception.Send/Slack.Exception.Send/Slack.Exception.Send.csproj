@@ -7,6 +7,7 @@
     <RepositoryUrl>https://github.com/alexandresanlim/Slack.Exception.Send</RepositoryUrl>
     <PackageReleaseNotes></PackageReleaseNotes>
     <Version>1.0.4</Version>
+    <Description>Create a bug report with exceptions from your code and send to Slack</Description>
   </PropertyGroup>
 
   <ItemGroup>

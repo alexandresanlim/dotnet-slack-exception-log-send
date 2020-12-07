@@ -65,17 +65,10 @@ namespace Slack.Exception.Send
             {
                 //new SlackField
                 //{
-                //    Title = "Message Error",
-                //    Value = message,
-                //    Short = false
+                //    Title = "Project Name",
+                //    Value = Assembly.GetCallingAssembly().GetName().Name,
+                //    Short = true
                 //},
-
-                new SlackField
-                {
-                    Title = "Project Name",
-                    Value = Assembly.GetCallingAssembly().GetName().Name,
-                    Short = true
-                },
 
                 new SlackField
                 {
@@ -100,7 +93,7 @@ namespace Slack.Exception.Send
 
                 new SlackField
                 {
-                    Title = "File Name",
+                    Title = "File",
                     Value = frame.GetFileName().ToString(),
                 }
             };
