@@ -12,7 +12,7 @@ namespace Slack.Exception.Send.Test
         {
             SlackExceptionSend.Start(new Config
             {
-                WebHookUrl = "https://hooks.slack.com/services/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"
+                WebHookUrl = "YOUR WEBHOOK URL TO TEST HERE"
             });
         }
 
