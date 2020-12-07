@@ -30,6 +30,7 @@ Results in:
 ## How to start it?
 We have a [great wiki article](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki) explaining exactly that!
 
+[1 - Prepare your Slack channel to receive exceptions](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki/1---Prepare-your-slack-channel-to-receive-exceptions)
 
 <img src='https://forthebadge.com/images/badges/built-with-love.svg' />
 
