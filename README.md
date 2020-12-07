@@ -54,15 +54,12 @@ Results:
 
 #### 1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
 
-#### 2 - Create a new configuration of Slack.Exception.Send
+#### 2 - On your start appliction, create a new configuration of Slack.Exception.Send
 ```csharp
-public TestSendException()
-{
     SendException.CreateConfig(new SendToSlackConfig
     {
         WebHookUrl = "YOUR WEBHOOK URL"
     });
-}
 ```
 #### 3 - Finish! Now your aplication will be solid!
 
