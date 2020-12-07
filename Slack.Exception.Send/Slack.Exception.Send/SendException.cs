@@ -8,49 +8,39 @@ using System.Threading.Tasks;
 
 namespace Slack.Exception.Send
 {
-    public class SendToSlackConfig
-    {
-        public string Color { get; set; } = "#c0392b";
-
-        /// <summary>
-        /// Set your Slack WebHookUrl here
-        /// </summary>
-        public string WebHookUrl { get; set; }
-    }
-
     public static class SendException
     {
         public static SlackClient SlackClient { get; set; }
 
-        public static SendToSlackConfig Config { get; set; }
+        public static Config Config { get; set; }
 
-        public static void Start(SendToSlackConfig config)
+        public static void Start(Config config)
         {
             Config = config;
         }
 
-        public static void CreateConfig(string webHookUrl, string color = "#c0392b")
+        public static void Start(string webHookUrl, string color = "#c0392b")
         {
-            Config = new SendToSlackConfig
+            Config = new Config
             {
                 Color = color,
                 WebHookUrl = webHookUrl
             };
         }
 
-        public static async Task<bool> SendToSlackAsync(this System.Exception ex, List<SlackField> extraFields = null)
+        public static async Task<bool> SendToSlackAsync(this System.Exception ex, ExtraInfo extraInfo = null)
         {
-            var slackMessage = GetExceptionText(ex, extraFields);
+            var slackMessage = GetExceptionText(ex, extraInfo);
             return await SlackClient.PostAsync(slackMessage).ConfigureAwait(false);
         }
 
-        public static bool SendToSlack(this System.Exception ex, List<SlackField> extraFields = null)
+        public static bool SendToSlack(this System.Exception ex, ExtraInfo extraInfo = null)
         {
-            var slackMessage = GetExceptionText(ex, extraFields);
+            var slackMessage = GetExceptionText(ex, extraInfo);
             return SlackClient.Post(slackMessage);
         }
 
-        private static SlackMessage GetExceptionText(System.Exception ex, List<SlackField> extraFields = null)
+        private static SlackMessage GetExceptionText(System.Exception ex, ExtraInfo extraInfo = null)
         {
             if (string.IsNullOrEmpty(Config?.WebHookUrl))
                 throw new ArgumentException("WebHookUrl not found");
@@ -66,19 +56,19 @@ namespace Slack.Exception.Send
             if (!string.IsNullOrEmpty(ex?.InnerException?.Message))
                 message += "\n\nInnerException.Message: " + ex?.InnerException?.Message;
 
-            return BuildSlackMessage(frame, message, extraFields);
+            return BuildSlackMessage(frame, message, extraInfo);
         }
 
-        private static SlackMessage BuildSlackMessage(StackFrame frame, string message, List<SlackField> extraFields = null)
+        private static SlackMessage BuildSlackMessage(StackFrame frame, string message, ExtraInfo extraInfo = null)
         {
             var fields = new List<SlackField>
             {
-                new SlackField
-                {
-                    Title = "Message Error",
-                    Value = message,
-                    Short = false
-                },
+                //new SlackField
+                //{
+                //    Title = "Message Error",
+                //    Value = message,
+                //    Short = false
+                //},
 
                 new SlackField
                 {
@@ -115,19 +105,24 @@ namespace Slack.Exception.Send
                 }
             };
 
-            if (extraFields != null)
-                fields.AddRange(extraFields);
+            if (extraInfo?.Fields != null && extraInfo.Fields.Count > 0)
+                fields.AddRange(extraInfo.Fields);
 
+            var slackAttachment = new SlackAttachment
+            {
+                Text = message,
+                Color = Config.Color,
+                Fields = fields,
+            };
+
+            if (extraInfo?.Actions != null && extraInfo.Actions.Count > 0)
+                slackAttachment.Actions = extraInfo.Actions;
 
             return new SlackMessage()
             {
                 Attachments = new List<SlackAttachment>
                 {
-                    new SlackAttachment
-                    {
-                        Color = Config.Color,
-                        Fields = fields
-                    },
+                    slackAttachment
                 },
             };
         }
