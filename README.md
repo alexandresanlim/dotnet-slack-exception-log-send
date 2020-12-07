@@ -1,7 +1,10 @@
 
-<img src='https://user-images.githubusercontent.com/5353685/101387243-f1570e00-389c-11eb-8386-f3228235bf6f.png'/>
+
 
 # Slack Exception Send
+
+<img width='200' src='https://user-images.githubusercontent.com/5353685/101387243-f1570e00-389c-11eb-8386-f3228235bf6f.png'/>
+
 [![Nuget](https://img.shields.io/nuget/dt/Slack.Exception.Send)](https://www.nuget.org/packages/Slack.Exception.Send)
 [![Nuget](https://img.shields.io/nuget/v/Slack.Exception.Send)](https://www.nuget.org/packages/Slack.Exception.Send)
 
