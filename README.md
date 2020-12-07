@@ -29,7 +29,7 @@ Results in:
 
 # 🚀 Getting Start
 
-# Prepare your slack channel to receive the exceptions
+# Prepare your slack channel to receive exceptions
 
 ### 1 - Lets create a channel and a webhook url to receive exception messages.
 
@@ -56,7 +56,7 @@ Results:
 <img width='700' src='https://user-images.githubusercontent.com/5353685/101173743-b4cbae00-3621-11eb-9616-ad8bb3c7e1a5.png' />
 
 
-# Prepare your application to send the exceptions
+# Prepare your application to send exceptions
 
 ### 1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
 
