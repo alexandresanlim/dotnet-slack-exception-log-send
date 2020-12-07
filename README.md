@@ -41,7 +41,7 @@ Results:
 
 #### 3 - On new tab select add to slack.
 
-3.1 Select your channel to receive slack exceptions messages > Add Integration
+3.1 Select your channel to receive exceptions messages from your application > Add Integration
 
 <img width='700' src='https://user-images.githubusercontent.com/5353685/101173510-661e1400-3621-11eb-824d-3721d55fc100.png' />
 
@@ -54,15 +54,12 @@ Results:
 
 #### 1 - Install this [Nuget Package](https://www.nuget.org/packages/Slack.Exception.Send)
 
-#### 2 - Create a new configuration of Slack.Exception.Send
+#### 2 - On your start appliction, create a new configuration of Slack.Exception.Send
 ```csharp
-public TestSendException()
-{
     SendException.CreateConfig(new SendToSlackConfig
     {
         WebHookUrl = "YOUR WEBHOOK URL"
     });
-}
 ```
 #### 3 - Finish! Now your aplication will be solid!
 
@@ -100,7 +97,7 @@ catch (System.Exception e)
 ```
 Results in:
 
-<img src='https://user-images.githubusercontent.com/5353685/101176947-f78f8500-3625-11eb-99c2-87ba2827e3df.png' />
+<img width='800' src='https://user-images.githubusercontent.com/5353685/101176947-f78f8500-3625-11eb-99c2-87ba2827e3df.png' />
 
 
 <img src='https://forthebadge.com/images/badges/built-with-love.svg' />
