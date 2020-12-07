@@ -31,7 +31,12 @@ Results in:
 We have a [great wiki article](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki) explaining exactly that!
 
 [1 - Prepare your Slack channel to receive exceptions](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki/1---Prepare-your-slack-channel-to-receive-exceptions)
-
+[2 - Prepare your application to send exceptions](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki/2-Prepare-your-application-to-send-exceptions-to-Slack-channel)
+[3- Customizations](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki/3-Customizations)
+    [3.1 - Add extra fields](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki/3.1-Add-extra-fields)
+    [3.2 - Add actions](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki/3.2-Add-Actions)
+[4 - Execute tests on this project](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki/4-Execute-tests-on-this-project)
+    
 <img src='https://forthebadge.com/images/badges/built-with-love.svg' />
 
 
