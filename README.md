@@ -62,12 +62,12 @@ Results:
 
 #### 2 - On your start appliction, create a new configuration of Slack.Exception.Send
 ```csharp
-    SendException.CreateConfig(new SendToSlackConfig
-    {
-        WebHookUrl = "YOUR WEBHOOK URL"
-    });
+SlackExceptionSend.Start(new Config
+{
+    WebHookUrl = "YOUR WEBHOOK URL TO TEST HERE"
+});
 ```
-#### 3 - Finish! Now your aplication will be solid!
+#### 3 - Finish! You can use ex.SendToSlack() on exceptions to be your aplication will be solid!
 
 # More!
 
