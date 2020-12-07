@@ -63,12 +63,12 @@ namespace Slack.Exception.Send
         {
             var fields = new List<SlackField>
             {
-                //new SlackField
-                //{
-                //    Title = "Project Name",
-                //    Value = Assembly.GetCallingAssembly().GetName().Name,
-                //    Short = true
-                //},
+                new SlackField
+                {
+                    Title = "Project Name",
+                    Value = Assembly.GetCallingAssembly().GetName().Name,
+                    Short = true
+                },
 
                 new SlackField
                 {
