@@ -34,7 +34,7 @@ We have a [great wiki article](https://github.com/alexandresanlim/DotNet.Slack.E
 
 [2 - Prepare your application to send exceptions](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki/2-Prepare-your-application-to-send-exceptions-to-Slack-channel)
 
-[3- Customizations](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki/3-Customizations)
+[3 - Customizations](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki/3-Customizations)
 
 [3.1 - Add extra fields](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki/3.1-Add-extra-fields)
     
