@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Slack.Exception.Send
 {
-    public static class SendException
+    public static class SlackExceptionSend
     {
         public static SlackClient SlackClient { get; set; }
 
@@ -30,14 +30,28 @@ namespace Slack.Exception.Send
 
         public static async Task<bool> SendToSlackAsync(this System.Exception ex, ExtraInfo extraInfo = null)
         {
-            var slackMessage = GetExceptionText(ex, extraInfo);
-            return await SlackClient.PostAsync(slackMessage).ConfigureAwait(false);
+            try
+            {
+                var slackMessage = GetExceptionText(ex, extraInfo);
+                return await SlackClient.PostAsync(slackMessage).ConfigureAwait(false);
+            }
+            catch (System.Exception e)
+            {
+                throw e;
+            }
         }
 
         public static bool SendToSlack(this System.Exception ex, ExtraInfo extraInfo = null)
         {
-            var slackMessage = GetExceptionText(ex, extraInfo);
-            return SlackClient.Post(slackMessage);
+            try
+            {
+                var slackMessage = GetExceptionText(ex, extraInfo);
+                return SlackClient.Post(slackMessage);
+            }
+            catch (System.Exception e)
+            {
+                throw e;
+            }
         }
 
         private static SlackMessage GetExceptionText(System.Exception ex, ExtraInfo extraInfo = null)

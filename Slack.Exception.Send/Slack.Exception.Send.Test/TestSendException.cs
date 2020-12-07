@@ -10,9 +10,9 @@ namespace Slack.Exception.Send.Test
     {
         public TestSendException()
         {
-            SendException.Start(new Config
+            SlackExceptionSend.Start(new Config
             {
-                WebHookUrl = "https://hooks.slack.com/services/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"
+                WebHookUrl = "https://hooks.slack.com/services/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"
             });
         }
 
@@ -133,7 +133,7 @@ namespace Slack.Exception.Send.Test
         {
             try
             {
-                SendException.Start(new Config
+                SlackExceptionSend.Start(new Config
                 {
                     WebHookUrl = ""
                 });
