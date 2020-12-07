@@ -28,7 +28,7 @@ Results in:
 ![alt text](https://i.imgur.com/Pc0MXIj.png)
 
 How to use it?
-We have a great wiki article explaining exactly that!
+We have a [great wiki article](./wiki) explaining exactly that!
 
 
 <img src='https://forthebadge.com/images/badges/built-with-love.svg' />
