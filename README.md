@@ -36,8 +36,6 @@ We have a [great wiki article](https://github.com/alexandresanlim/DotNet.Slack.E
 [3.1 - Add extra fields](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki/3.1-Add-extra-fields)<br/>
 [3.2 - Add actions](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki/3.2-Add-Actions)<br/>
 [4 - Execute tests on this project](https://github.com/alexandresanlim/DotNet.Slack.ExceptionSend/wiki/4-Execute-tests-on-this-project)<br/>
-    
-<img src='https://forthebadge.com/images/badges/built-with-love.svg' />
 
 
 
